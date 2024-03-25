@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fot-smoothing: grayscale;
+}
+
+.img-login img{
+    background-repeat: no-repeat;
+    max-width: 960px;
+    max-height: 1024px;
+}
+
+.login-container {
+    display: flex;
+}
+
+.form-content {
+    max-width: 507px;
+    height: 774px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 64px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.form-content h1 {
+    color: #03014C;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: .1em;
+    padding-bottom: 16px;
+}
+
+.form-content p {
+    color: #03014C;
+    
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.login-link {
+    align-self: end;
+    margin-bottom: 125px;
+}
+
+.login-link p{
+    color: #03014C;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.login-link p a {
+    color: #3048C1; 
+}
+
+.create-account {
+    padding-top: 24px;
+    height: 483px;
+    max-width: 491px;
+}
+
+.nome-usuario {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.nome-usuario input {
+    width: 483px;
+    height: 64px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding-left: 64px;
+}
+
+.user-icon {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    display: flex;
+    z-index: 1;
+}
+
+.nome-usuario input::placeholder {
+    color: #03014C;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.email input {
+    width: 483px;
+    height: 64px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding-left: 64px;
+}
+
+.email-icon {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    display: flex;
+    z-index: 1;
+}
+
+.email input::placeholder {
+    color: #03014C;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.senha input {
+    width: 483px;
+    height: 64px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding-left: 64px;
+}
+
+.senha-icon {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    display: flex;
+    z-index: 1;
+}   
+
+.senha input::placeholder {
+    color: #03014C;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.button-create-account button{
+    cursor: pointer;
+    width: 483px;
+    height: 64px;
+    border: none;
+    background: #3048C1;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.social-login {
+    display: flex;
+    gap: 20px;
+}
+
+.google-button {
+    cursor: pointer;
+    width: 232px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #B3B3C9;
+    border-radius: 8px;
+}
+
+.google-button a {
+    color: #03014C;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.facebook-button {
+    cursor: pointer;
+    width: 232px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #B3B3C9;
+    border-radius: 8px;
+}
+.facebook-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.facebook-button a {
+    color: #03014C;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .img-login img {
+        
+        width: 500px;
+        height: 960px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    .img-login img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .form-content {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .form-content {
+        max-width: 400px;
+    }
+
+    .nome-usuario input {
+        width: 335px;
+    }
+
+    .email input {
+        width: 335px;
+    }
+
+    .senha input {
+        width: 335px;
+    }
+
+    .button-create-account button{
+        width: 335px;
+    }
+
+    .create-account {
+        max-width: 335px;
+    }
+
+    #primeiro-p {
+        max-width: 335px;
+    }
+
+    .login-link {
+        padding-right: 20px;
+    }
+
+}
