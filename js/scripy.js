@@ -2,9 +2,9 @@ const inputName = document.querySelector(".nome-usuario");
 const inputEmail = document.querySelector(".email");
 const inputPassword = document.querySelector(".senha");
 const buttonCreateAccount = document.querySelector(".button-create-account");
+const googleButton = document.querySelector(".google-button");
+const facebookButton = document.querySelector(".facebook-button");
 const body = document.querySelector("body");
-
-console.log(buttonCreateAccount);
 
 /* Adicionar a interação ao input de Nome de usuário*/
 function showBorderName(event){
@@ -41,10 +41,8 @@ function retirarBorderPassword() {
 
 /* Adicionar envento de mouseouver botão*/
 
-function ChangeButtonColor(event){
+function ChangeButtonColor(){
     buttonCreateAccount.classList.add("button-create-account-hover");
-    event.stopPropagation();
-    console.log("Passou");
 }
 
 function removeMouseFromButton(){
@@ -54,6 +52,32 @@ function removeMouseFromButton(){
 buttonCreateAccount.addEventListener("mouseout", removeMouseFromButton)
 buttonCreateAccount.addEventListener("mouseover", ChangeButtonColor);
 
+/* Adicionar evento mouseover quando passar o mouse em cima do botão do Google */
+
+function googleHoverButton(){
+    googleButton.classList.add("google-button-hover");
+}
+
+function removeGoogleHoverbutton(){
+    googleButton.classList.remove("google-button-hover");
+}
+
+googleButton.addEventListener("mouseover", googleHoverButton);
+googleButton.addEventListener("mouseout", removeGoogleHoverbutton);
+
+
+/* Adicionar evento mouseover quando passar o mouse em cima do botão do Facebook */
+
+function facebookHoverButton(){
+    facebookButton.classList.add("facebook-button-hover");
+}
+
+function removeFacebookHoverButton(){
+    facebookButton.classList.remove("facebook-button-hover");
+}
+
+facebookButton.addEventListener("mouseover", facebookHoverButton);
+facebookButton.addEventListener("mouseout", removeFacebookHoverButton);
 
 /* Adicionar a interação no input de nome de usuário*/
 inputName.addEventListener("click", retirarBorder);

@@ -213,6 +213,22 @@ input:focus {
     gap: 12px;
     border: 1px solid #B3B3C9;
     border-radius: 8px;
+    transition: .5s;
+}
+
+.google-button-hover {
+    cursor: pointer;
+    width: 232px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #B3B3C9;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    transition: .5s;
 }
 
 .google-button a {
@@ -233,7 +249,24 @@ input:focus {
     gap: 12px;
     border: 1px solid #B3B3C9;
     border-radius: 8px;
+    transition: .5s;
 }
+
+.facebook-button-hover {
+    cursor: pointer;
+    width: 232px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #B3B3C9;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    transition: .5s;
+}
+
 .facebook-button img {
     width: 24px;
     height: 24px;
