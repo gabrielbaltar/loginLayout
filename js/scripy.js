@@ -1,9 +1,10 @@
 const inputName = document.querySelector(".nome-usuario");
 const inputEmail = document.querySelector(".email");
 const inputPassword = document.querySelector(".senha");
+const buttonCreateAccount = document.querySelector(".button-create-account");
 const body = document.querySelector("body");
 
-console.log(inputPassword);
+console.log(buttonCreateAccount);
 
 /* Adicionar a interação ao input de Nome de usuário*/
 function showBorderName(event){
@@ -37,6 +38,22 @@ function showBorderPassword(event){
 function retirarBorderPassword() {
     inputPassword.classList.remove("senha-border");
 }
+
+/* Adicionar envento de mouseouver botão*/
+
+function ChangeButtonColor(event){
+    buttonCreateAccount.classList.add("button-create-account-hover");
+    event.stopPropagation();
+    console.log("Passou");
+}
+
+function removeMouseFromButton(){
+    buttonCreateAccount.classList.remove("button-create-account-hover");
+}
+
+buttonCreateAccount.addEventListener("mouseout", removeMouseFromButton)
+buttonCreateAccount.addEventListener("mouseover", ChangeButtonColor);
+
 
 /* Adicionar a interação no input de nome de usuário*/
 inputName.addEventListener("click", retirarBorder);

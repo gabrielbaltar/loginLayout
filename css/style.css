@@ -181,6 +181,20 @@ input:focus {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 32px;
+    transition: .5s;
+}
+
+.button-create-account-hover button{
+    background-color: #253BAA;
+    width: 483px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    transition: .5s;
 }
 
 .social-login {
